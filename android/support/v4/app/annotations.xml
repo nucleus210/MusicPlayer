@@ -1,0 +1,6 @@
+<!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
+<root>
+    <item name='android.support.v4.app.NotificationCompat'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

@@ -1,0 +1,24 @@
+<resources>
+    <!-- App Name [CHAR LIMIT=20] -->
+    <string name="app_name">MusicPlayer</string>
+    <!-- Channel name in notification [CHAR LIMIT=20] -->
+    <string name="channel_name">Player</string>
+    <!-- Player descriptor[CHAR LIMIT=20] -->
+    <string name="channel_description">Player descriptor</string>
+    <!-- Song name [CHAR LIMIT=20] -->
+    <string name="play_music">Play music</string>
+    <!-- Song title [CHAR LIMIT=20] -->
+    <string name="song_title">Song title</string>
+    <!-- Song Path [CHAR LIMIT=20] -->
+    <string name="file_path">File path</string>
+    <!-- Time format in minutes, second, milliseconds [CHAR LIMIT=20] -->
+    <string name="time">0:00</string>
+    <!-- Back button [CHAR LIMIT=20] -->
+    <string name="back">back</string>
+    <!-- Menu button [CHAR LIMIT=20] -->
+    <string name="menu">menu</string>
+    <!-- TODO [CHAR LIMIT=20] -->
+    <string name="todo">TODO</string>
+    <!--Toast permission error message [CHAR LIMIT=20] -->
+    <string name="permission">Cannot write sample audio files without granted permission</string>
+</resources>

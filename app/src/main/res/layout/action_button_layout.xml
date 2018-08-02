@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/OneFourTransparent"
+    app:layout_goneMarginBottom="8dp"
+    tools:ignore="Overdraw">
+
+    <ImageButton
+        android:id="@+id/previous_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/play_pause_button"
+        android:layout_alignTop="@+id/play_pause_button"
+        android:layout_toLeftOf="@+id/play_pause_button"
+        android:layout_toStartOf="@+id/play_pause_button"
+        android:background="@color/transparent"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@android:drawable/ic_media_previous" />
+
+    <ImageButton
+        android:id="@+id/play_pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/play_pause_button"
+        android:layout_alignTop="@+id/play_pause_button"
+        android:layout_toEndOf="@+id/play_pause_button"
+        android:layout_toRightOf="@+id/play_pause_button"
+        android:background="@color/transparent"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+    <ImageButton
+        android:id="@+id/add_list_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/next_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/next_button"
+        android:layout_marginEnd="@dimen/right_margin_media_data"
+        android:layout_marginLeft="@dimen/left_margin_media_data"
+        android:layout_marginRight="@dimen/right_margin_media_data"
+        android:layout_marginStart="@dimen/left_margin_media_data"
+        android:layout_toEndOf="@id/next_button"
+        android:layout_toRightOf="@id/next_button"
+        android:background="@color/transparent"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_playlist_play_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/play_pause_button"
+        android:orientation="horizontal"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingStart="21dp">
+
+        <TextView
+            android:id="@+id/count_down_timer"
+            style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Base.Widget.AppCompat.SeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/timer"
+            style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
+

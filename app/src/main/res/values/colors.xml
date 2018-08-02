@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorText">#d2ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparentHalf">#7a000000</color>
+    <color name="OneFourTransparent">#b7000000</color>
+</resources>
+

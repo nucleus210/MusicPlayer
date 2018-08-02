@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparentHalf"
+    tools:ignore="Overdraw">
+
+    <ImageView
+        android:id="@+id/notify_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/left_margin_notify"
+        android:layout_marginStart="@dimen/left_margin_notify"
+        android:contentDescription="@string/todo"
+        android:padding="@dimen/main_padding"
+        android:src="@drawable/ic_audio_track_dark" />
+
+    <TextView
+        android:id="@+id/notify_song_title"
+        style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_margin_notify_text"
+        android:layout_marginStart="@dimen/left_margin_notify_text"
+        android:layout_marginTop="@dimen/top_margin_notify_text"
+        android:text="@string/play_music" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notify_song_title"
+        android:layout_toEndOf="@id/notify_icon"
+        android:layout_toRightOf="@id/notify_icon"
+        android:orientation="horizontal"
+        android:padding="@dimen/main_padding">
+
+        <ImageButton
+            android:id="@+id/notify_previous_button"
+            style="@android:style/MediaButton.Previous"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@android:drawable/ic_media_previous" />
+
+        <ImageButton
+            android:id="@+id/notify_play_pause_button"
+            style="@android:style/MediaButton.Play"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/notify_next_button"
+            style="@android:style/MediaButton.Next"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@android:drawable/ic_media_next" />
+    </LinearLayout>
+
+</RelativeLayout>

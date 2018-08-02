@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top_margin_notify_text">8dp</dimen>
+    <dimen name="left_margin_notify_text">55dp</dimen>
+    <dimen name="left_margin_notify">8dp</dimen>
+
+    <dimen name="left_margin_media_data">16dp</dimen>
+    <dimen name="right_margin_media_data">16dp</dimen>
+    <dimen name="top_margin_media_data">16dp</dimen>
+    <dimen name="bottom_margin_media_data">16dp</dimen>
+
+    <dimen name="main_padding">8dp</dimen>
+    <dimen name="main_margin">8dp</dimen>
+    <dimen name="left_margin_duration">8dp</dimen>
+    <dimen name="right_margin_duration">14dp</dimen>
+</resources>

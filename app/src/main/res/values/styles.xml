@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Custom text small style -->
+    <style name="CustomTextSmall" parent="@style/Base.TextAppearance.AppCompat.Small"
+        tools:ignore="UnusedResources">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:layout_marginLeft">@dimen/left_margin_duration</item>
+        <item name="android:layout_marginRight">@dimen/right_margin_duration</item>
+    </style>
+    <!-- Custom text small style -->
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparentHalf</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

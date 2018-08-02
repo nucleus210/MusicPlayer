@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparentHalf"
+    android:orientation="vertical"
+    tools:context=".MainPlayerActivity"
+    tools:ignore="Overdraw">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/horizontal_separator"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerInside"
+        android:src="@drawable/malte_wingen_unsplash" />
+
+    <ImageView
+        android:id="@+id/playing_image"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_above="@+id/horizontal_separator"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerInside"
+        android:src="@drawable/gold_vinyl_record_png_clip_art_image_sec" />
+
+    <View
+        android:id="@+id/horizontal_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/song_artist"
+        style="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/song_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/right_margin_media_data"
+        android:layout_marginLeft="@dimen/left_margin_media_data"
+        android:layout_marginRight="@dimen/right_margin_media_data"
+        android:layout_marginStart="@dimen/left_margin_media_data" />
+
+    <TextView
+        android:id="@+id/song_title"
+        style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_action_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/bottom_margin_media_data"
+        android:layout_marginEnd="@dimen/right_margin_media_data"
+        android:layout_marginLeft="@dimen/left_margin_media_data"
+        android:layout_marginRight="@dimen/right_margin_media_data"
+        android:layout_marginStart="@dimen/left_margin_media_data"
+        android:layout_marginTop="@dimen/top_margin_media_data" />
+
+    <MediaController
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:focusable="true"
+        android:focusableInTouchMode="false" />
+
+    <LinearLayout
+        android:id="@+id/bottom_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</RelativeLayout>
